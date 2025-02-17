@@ -12,7 +12,20 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{ 
 if(lq) return reply("plese give me url or titel"),
 const search = await yts(q),
-const data = search.videos(o);
+const data = search.videos(0);
+const url = data.url
+
+let desc = 
+☣️ "MALIDU BOT SONG DOWLODE" ☣️
+
+titel: $(data.titel)
+description: $(data.description)
+time: $(data.timestamp)
+ago: $(data.ago)
+views: $(data.views)
+
+|Made by malidu
+
 
 }catch(e){
 console.log(e)
