@@ -35,7 +35,9 @@ let downlodaurl = down.di.url
 
 
 //send audio massage
-await conn.sendmassage(from.{audio:{})
+await conn.sendmassage(from.{audio:{url:downlodaurl}.mimetype:"audio/mpeg"}.{quoted}
+
+
 }catch(e){
 console.log(e)
 reply(`${e}`)
