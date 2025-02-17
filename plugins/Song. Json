@@ -24,7 +24,9 @@ time: $(data.timestamp)
 ago: $(data.ago)
 views: $(data.views)
 
-|Made by malidu
+|Made by malidu ☣️
+"
+await conn.sendmassage(frome,{image:{url: data.thumbnail},caption:desc},{quoted:mek})
 
 
 }catch(e){
