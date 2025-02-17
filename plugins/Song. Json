@@ -28,7 +28,14 @@ views: $(data.views)
 "
 await conn.sendmassage(frome,{image:{url: data.thumbnail},caption:desc},{quoted:mek})
 
+//dowlode audio 
 
+let down = await fg.yta(url)
+let downlodaurl = down.di.url
+
+
+//send audio massage
+await conn.sendmassage(from.{audio:{})
 }catch(e){
 console.log(e)
 reply(`${e}`)
